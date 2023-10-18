@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA9743A22AD1130B0014C03F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9743A12AD1130B0014C03F /* DataStore.swift */; };
+		AA9743A42AD114020014C03F /* SampleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9743A32AD114020014C03F /* SampleMapView.swift */; };
+		AA9743A62AD114580014C03F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9743A52AD114580014C03F /* LocationManager.swift */; };
 		BF2CA04B28EE7F7100D3C2EF /* fire_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CA04A28EE7F7100D3C2EF /* fire_appApp.swift */; };
 		BF2CA04D28EE7F7100D3C2EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CA04C28EE7F7100D3C2EF /* ContentView.swift */; };
 		BF2CA04F28EE7F7600D3C2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2CA04E28EE7F7600D3C2EF /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA9743A12AD1130B0014C03F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		AA9743A32AD114020014C03F /* SampleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMapView.swift; sourceTree = "<group>"; };
+		AA9743A52AD114580014C03F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BF2CA04728EE7F7100D3C2EF /* fire app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fire app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2CA04A28EE7F7100D3C2EF /* fire_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fire_appApp.swift; sourceTree = "<group>"; };
 		BF2CA04C28EE7F7100D3C2EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +71,9 @@
 			children = (
 				BF2CA06028EE871C00D3C2EF /* multiTabView.swift */,
 				BF854FFB2AB6558F00AEDE60 /* FireGridView.swift */,
+				AA9743A12AD1130B0014C03F /* DataStore.swift */,
+				AA9743A32AD114020014C03F /* SampleMapView.swift */,
+				AA9743A52AD114580014C03F /* LocationManager.swift */,
 				BF2CA06228EE87D800D3C2EF /* webKitCode.swift */,
 				BF2CA04A28EE7F7100D3C2EF /* fire_appApp.swift */,
 				BF2CA04C28EE7F7100D3C2EF /* ContentView.swift */,
@@ -161,12 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9743A22AD1130B0014C03F /* DataStore.swift in Sources */,
+				AA9743A42AD114020014C03F /* SampleMapView.swift in Sources */,
 				BF2CA06328EE87D800D3C2EF /* webKitCode.swift in Sources */,
 				BF854FFC2AB6558F00AEDE60 /* FireGridView.swift in Sources */,
 				BF2CA06128EE871C00D3C2EF /* multiTabView.swift in Sources */,
 				BF2CA04D28EE7F7100D3C2EF /* ContentView.swift in Sources */,
 				BF2CA04B28EE7F7100D3C2EF /* fire_appApp.swift in Sources */,
 				BF8550002AB6580D00AEDE60 /* GridModel.swift in Sources */,
+				AA9743A62AD114580014C03F /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

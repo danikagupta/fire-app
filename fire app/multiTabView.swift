@@ -8,25 +8,38 @@
 import SwiftUI
 import WebKit
 
+
 struct MultiTabView: View {
+    @StateObject var locationManager = LocationManager()
+    @State private var tabSelected=1
+
     var body: some View {
-        TabView{
-            WebView(url:URL(string:"https ://sites.google.com/view/smokefinder/app-home-page")!)
+        TabView(selection:$tabSelected){
+            WebView(url:URL(string:"https://sites.google.com/view/smokefinder/app-home-page")!)
                 .tabItem{
                     Label("Information",systemImage: "flame.circle.fill")
                 }
+                .tag(1)
+            SampleMapView(locationManager: locationManager,tabSelect:$tabSelected)
+                .tabItem{
+                    Label("Map View",systemImage: "flame.circle.fill")
+                }
+                .tag(2)
             FireGridView()
                 .tabItem{
                     Label("Grid View",systemImage: "flame.circle.fill")
                 }
+                .tag(3)
             ContentView()
                 .tabItem{
                     Label("Detect Fire",systemImage: "camera.circle.fill")
                 }
+                .tag(4)
             WebView(url:URL(string:"https://sites.google.com/view/smokefinder/continuing")!)
                 .tabItem{
                     Label("Credits",systemImage: "quote.bubble.fill")
                 }
+                .tag(5)
            
         }
     }
